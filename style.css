@@ -1,0 +1,243 @@
+/* css reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+*body{
+   font-family: sans-serif;
+}
+.container-navbar{
+    background-color: #3b3dcc;
+    height: 2rem;
+    width: 100%;
+}
+.container-navbar ul{
+    display: flex;
+}
+.container-navbar ul li{
+    list-style: none;
+    padding: 0.25rem 1rem;
+}
+.container-navbar ul li a{
+    color: white;
+    text-decoration: none;
+}
+.container-navbar ul li a:hover{
+    border-bottom: 2px solid white;
+}
+/* Body Part */
+.heading-container{
+    height: 9rem;
+    width: 19rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    margin-left: 2rem;
+}
+.heading-container h1{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.heading-container span{
+    color: #3b3dcc;
+}
+.info-container p{
+    font-weight: 300;
+    padding: 1rem;
+    margin-left: 1rem;
+    width: 17rem;
+}
+.product-btn{
+    margin-top: 3rem;
+}
+.product-btn a{
+    font: 1em sans-serif;
+    padding: 0.7rem 2rem;
+    margin-left: 2rem;
+    color: white;
+    background-color: #3b3dcc;
+    border-radius: 6px;
+}
+.product-btn a:hover{
+    cursor: pointer;
+}
+
+.container-img-1 img{
+    display: flex;
+    position: absolute;
+    left: 40%;
+    top: 29%;
+    height: 13rem;
+    width: 15rem;
+    box-shadow: 5px 8px 21px 0px rgba(0,0,0,0.75);
+}
+.container-img-2 img{
+    display: flex;
+    position: absolute;
+    left: 70%;
+    top: 29%;
+    height: 13rem;
+    width: 15rem;
+    box-shadow: 5px 8px 21px 0px rgba(0,0,0,0.75);
+}
+.customer-container{
+    height: 30rem;
+    width: 100%;
+    background-color: #3b3dcc;
+    margin-top: 8rem;
+}
+.customer-container .customer-heading h1{
+    font-size: 3rem;
+    font-weight: 500;
+    padding: 2rem 2rem;
+    color: white;
+}
+.customer-container .customer-heading span{
+    font-weight: bold;
+}
+.customer-container  .customer-list p{
+    margin-left: 3rem;
+    width: 34rem;
+    color: white;
+}
+.customer-container .company-logo{
+    display: flex;
+    flex-wrap: wrap;
+}
+.customer-container .company-logo .bank-logo{
+    margin: 2rem 1rem;
+    padding: 1rem;
+}
+.customer-container .company-logo img{
+    height: 5rem;
+    width: 7rem;
+
+}
+.about-1-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+
+}
+.about-1-container h1{
+    font-weight: 600;
+}
+.about-1-container span{
+    color:#3b3dcc ;
+    font-weight: 600;
+}
+.about-1-container p{
+    font-size: 1.3rem;
+    margin: 2rem 1rem;
+}
+.footer p{
+    background-color: #3b3dcc;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2rem;
+    padding: 1rem;
+}
+
+@media (max-width:1400px) {
+   .container-img-1 img{
+       height: 8rem;
+       width: 10rem;
+   }
+   .container-img-2 img{
+       height: 8rem;
+       width: 10rem;
+   }
+}
+@media (max-width:1050px) {
+    .container-img-1 img{
+        position: absolute;
+        top: 10%;
+        left: 60%;
+    }
+    .container-img-2 img{
+        position: absolute;
+        top: 40%;
+        left: 60%;
+    }
+}
+@media (max-width:750px) {
+    .container-img-1 img{
+        height: 4rem;
+        width: 6rem;
+        left: 70%;
+        top: 20%;
+    }
+    .container-img-2 img{
+        height: 4rem;
+        width: 6rem;
+        left: 70%;
+        top: 35%;
+    }
+    .customer-container .company-logo .bank-logo{
+        margin: 1rem 1rem;
+        padding: 0rem;
+    }
+    .customer-container  .customer-list p{
+        width: 20rem;
+    }
+    
+}
+@media (max-width:625px) {
+    .container-img-1,
+    .container-img-2{
+        display: none;
+    }
+    
+}
+@media (max-width:540px) {
+    .customer-container{
+        height: 40rem;
+    }
+    .customer-container  .customer-list p{
+        width: auto;
+        padding: 1rem;
+    }
+}
+@media (max-width:460px) {
+    .heading-container{
+        height: 9rem;
+        width: 10rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3rem;
+        margin-left: 2rem;
+    }
+    heading-container h1{
+        font-size: 0.625rem;
+        margin-left: 2rem;
+    } 
+    .info-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .info-container p{
+        font-weight: 300;
+        padding: 1rem;
+        margin-top: 6rem;
+        margin-left: 1rem;
+        width: 17rem;
+    }
+}
+@media (max-width:350px) {
+    .customer-container{
+        height: 60rem;
+    }
+    .customer-container .company-logo .bank-logo{
+        margin: 1rem 5rem;
+    }
+    .product-btn a{
+        padding: 0.7rem 1rem;
+}
